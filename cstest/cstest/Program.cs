@@ -10,7 +10,18 @@ namespace cstest
     {
         static void Main()
         {
-            string mystr;
+            int[] tab = new int[5];
+
+            for(int i = 0; i<tab.Length;i++)
+            {
+                tab[i] = i + 1;
+            }
+
+            foreach(int element in tab)
+            {
+                Console.WriteLine(element);
+            }
+
             Console.ReadKey();
         }
     }
