@@ -11,6 +11,7 @@ namespace cstest
         static void Main()
         {
             Console.ReadKey();
+            //zrób coś
         }
     }
 }
