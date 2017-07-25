@@ -6,27 +6,35 @@ using System.Threading.Tasks;
 
 namespace cstest
 {
+    public class Human
+    {
+        
+        public Human(string imie, int wiek)
+        {
+            this.imie = imie;
+            this.wiek = wiek;
+        }
+
+        public string imie;
+        public int wiek;
+
+        public void sayHi()
+        {
+            Console.WriteLine("Czesc, jestem {0} i mam {1} lat", imie, wiek);
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
         {
-            int[] tab = new int[100];
+            Human h1 = new Human("Kazik",17);
+            Human h2 = new Human("Mati", 17);
+            Human h3 = new Human("Naczer",15);
 
-            for(int i = 0; i < tab.Length; i++)
-            {
-                tab[i] = i + 1;
-                Console.WriteLine("for: " + tab[i]);
-            }
-
-            foreach(int element in tab)
-            {
-                Console.WriteLine("foreach: " + element);
-            }
-
-            for (int i = 0; i < args.Length; i++)
-            {
-                Console.WriteLine("Args[{0}]: {1}", i, args[i]);
-            }
+            h1.sayHi();
+            h2.sayHi();
+            h3.sayHi();
 
             Console.ReadKey();
         }
