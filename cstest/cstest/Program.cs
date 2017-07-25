@@ -15,12 +15,12 @@ namespace cstest
             for(int i = 0; i < tab.Length; i++)
             {
                 tab[i] = i + 1;
-                Console.WriteLine(tab[i]);
+                Console.WriteLine("for: " + tab[i]);
             }
 
             foreach(int element in tab)
             {
-                Console.WriteLine("elo: " + element);
+                Console.WriteLine("foreach: " + element);
             }
 
             Console.ReadKey();
