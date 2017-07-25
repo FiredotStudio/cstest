@@ -8,7 +8,7 @@ namespace cstest
 {
     class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
             int[] tab = new int[100];
 
@@ -21,6 +21,11 @@ namespace cstest
             foreach(int element in tab)
             {
                 Console.WriteLine("foreach: " + element);
+            }
+
+            for (int i = 0; i < args.Length; i++)
+            {
+                Console.WriteLine("Args[{0}]: {1}", i, args[i]);
             }
 
             Console.ReadKey();
