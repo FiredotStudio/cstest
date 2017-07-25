@@ -10,7 +10,6 @@ namespace cstest
     {
         static void Main()
         {
-            string myStr;
             Console.ReadKey();
         }
     }
