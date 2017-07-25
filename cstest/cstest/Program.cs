@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace cstest
 {
@@ -20,7 +16,7 @@ namespace cstest
 
         public void sayHi()
         {
-            Console.WriteLine("Czesc, jestem {0} i mam {1} lat", imie, wiek);
+            Console.WriteLine($"Czesc, jestem {imie} i mam {wiek} lat.");
         }
     }
 
@@ -28,9 +24,9 @@ namespace cstest
     {
         static void Main(string[] args)
         {
-            Human h1 = new Human("Kazik",17);
+            Human h1 = new Human("Kazik", 17);
             Human h2 = new Human("Mati", 17);
-            Human h3 = new Human("Naczer",15);
+            Human h3 = new Human("Naczer", 15);
 
             h1.sayHi();
             h2.sayHi();
