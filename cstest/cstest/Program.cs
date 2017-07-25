@@ -8,8 +8,10 @@ namespace cstest
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            string myStr;
+            Console.ReadKey();
         }
     }
 }
