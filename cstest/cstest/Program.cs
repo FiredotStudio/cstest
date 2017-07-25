@@ -10,8 +10,8 @@ namespace cstest
     {
         static void Main()
         {
+            string mystr;
             Console.ReadKey();
-            //zrób coś
         }
     }
 }
