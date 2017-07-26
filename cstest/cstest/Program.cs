@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace cstest
 {
@@ -24,13 +25,10 @@ namespace cstest
     {
         static void Main(string[] args)
         {
-            Human h1 = new Human("Kazik", 17);
-            Human h2 = new Human("Mati", 17);
-            Human h3 = new Human("Naczer", 15);
-
-            h1.sayHi();
-            h2.sayHi();
-            h3.sayHi();
+            List<Human> humans = new List<Human>();
+            //Human h1 = new Human("Kazik", 17);
+            humans.Add(new Human("Kazik", 17));
+            humans.ForEach(c => c.sayHi());
 
             Console.ReadKey();
         }
